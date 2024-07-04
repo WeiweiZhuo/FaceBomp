@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #4ecdc4, #556270);
+    color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ff6b6b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  #gameBoard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+  }
+  
+  .hole {
+    width: 100px;
+    height: 100px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.2s;
+  }
+  
+  .hole:hover img {
+    transform: scale(1.1);
+  }
+  
+  #finalMessage {
+    font-size: 1.5em;
+    margin-top: 20px;
+  }
+  
